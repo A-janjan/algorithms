@@ -6,3 +6,6 @@ def quicksort(array):
         less = [i for i in array[1:] if i<pivot]
         greater = [i for i in array[1:] if i>pivot]
     return quicksort(less) + [pivot] + quicksort(greater)
+
+
+# Time Complexity: n*lg(n)
